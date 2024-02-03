@@ -1,1 +1,52 @@
 @import '../App.scss';
+
+.contact{
+
+  &__contact-box {
+    text-align: left;
+    margin: 80px 0 88px 0;
+    padding: 40px;
+    border-radius: 10px;
+    background: $color-black;
+    box-shadow: 0px 4px 20px 0px rgba(219, 219, 219, 0.2);
+
+    &__h3 {
+      font-weight: 600;
+      color: $color-white;
+    }
+
+    &__label {
+      margin: 30px 0 15px 0;
+      font-weight: 300;
+      color: $color-white;
+    }
+
+    &__button {
+      margin-top: 25px;
+      padding: 8px 19px;
+      border-radius: 10px;
+    }
+  }
+
+  &__input {
+    width: 98%;
+    height: 20px;
+    border-radius: 3px;
+    padding: 10px;
+    margin: 10px 10px 10px 0;
+  }
+
+  &__textarea {
+    width: 97%;
+    height: 140px;
+    border: none;
+    border-radius: 10px;
+    padding: 20px;
+    margin: 10px 10px 10px 0;
+
+
+    &:focus {
+      outline: none;
+    }
+  }
+}

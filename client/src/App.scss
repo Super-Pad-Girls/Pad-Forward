@@ -1,0 +1,71 @@
+@import url('https://fonts.googleapis.com/css2?family=Rubik:wght@300;400;500;600&display=swap');
+
+// 👉 Color Variables
+$color-white: #ffffff;
+$color-ivory: #fffaef;
+$color-pink: #ff6581;
+$color-yellow: #ffbf35;
+$color-black: #262626;
+
+$fs-small: 14px;
+$fs-medium: 16px;
+$fs-large: 20px;
+$fs-xlarge: 32px;
+
+:root {
+    max-width: 1280px;
+    margin: 0 auto;
+    padding: 2rem;
+    text-align: center;
+    font-family: Rubik, Inter, system-ui, Avenir, Helvetica, Arial, sans-serif;
+    line-height: 130%;
+    font-weight: 400;
+    font-size: $fs-medium;
+    background-color: $color-ivory;
+    color: $color-black;
+}
+
+a {
+    font-weight: 500;
+    color: $color-black;
+    text-decoration: inherit;
+
+    &:hover {
+        color: $color-yellow;
+    }
+}
+
+body {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.btn {
+    padding: 0.6em 1.2em;
+    font-size: $fs-medium;
+    font-weight: 500;
+    font-family: inherit;
+    cursor: pointer;
+    transition: border-color 0.25s;
+    border: 2px solid transparent;
+}
+
+.btn-primary {
+    border-radius: 8px;
+    background-color: $color-yellow;
+
+    &:hover {
+        background-color: rgba($color-yellow, 0.8);
+    }
+}
+
+.btn-secondary {
+    background-color: $color-black;
+    color: $color-ivory;
+
+    &:hover {
+        background-color: $color-yellow;
+        color: $color-black;
+    }
+}

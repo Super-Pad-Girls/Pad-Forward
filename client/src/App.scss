@@ -1,4 +1,4 @@
-@import url('https://fonts.googleapis.com/css2?family=Rubik:wght@300;400;500;600&display=swap');
+@import url("https://fonts.googleapis.com/css2?family=Rubik:wght@300;400;500;600&display=swap");
 
 // 👉 Color Variables
 $color-white: #ffffff;
@@ -47,7 +47,7 @@ body {
     font-weight: 500;
     font-family: inherit;
     cursor: pointer;
-    transition: border-color 0.25s;
+    transition: all 0.25s;
     border: 2px solid transparent;
 }
 
@@ -63,6 +63,18 @@ body {
 .btn-secondary {
     background-color: $color-black;
     color: $color-ivory;
+
+    &:hover {
+        background-color: $color-yellow;
+        color: $color-black;
+        border: 2px solid $color-black;
+    }
+}
+
+.btn-secondary-outline {
+    background-color: transparent;
+    color: $color-black;
+    border: 2px solid $color-black;
 
     &:hover {
         background-color: $color-yellow;

@@ -4,7 +4,7 @@ import supportImage from "../../public/images/support.png";
 import "./GetInvolved.scss";
 
 const GetInvolved = ({ data }) => {
-    const { firstTitle, firstDescription } = data;
+    const { firstTitle, firstDescription, secondTitle, secondDescription, thirdTitle, thirdDescription } = data;
     return (
         <>
             <div className="summary-board">
@@ -20,13 +20,8 @@ const GetInvolved = ({ data }) => {
                 </div>
                 <div className="content-row reverse">
                     <div className="text">
-                        <h2>2. Delivery to Your Provided Address</h2>
-                        <p>
-                            Once your request is approved, we will ship the
-                            menstrual pads directly to the address you have
-                            provided. Our goal is to ensure that you receive the
-                            support you need promptly and efficiently.
-                        </p>
+                    <h2>{secondTitle}</h2>
+                    <p>{secondDescription}</p>
                     </div>
                     <div
                         className="image"
@@ -39,15 +34,8 @@ const GetInvolved = ({ data }) => {
                         style={{ backgroundImage: `url(${supportImage})` }}
                     ></div>
                     <div className="text">
-                        <h2>3. Tips and Support Alongside Your Pads</h2>
-                        <p>
-                            With every package of menstrual pads, we also send
-                            tips and advice on managing your period, all shared
-                            with love and care. These tips come from donors who
-                            have navigated their own menstrual experiences and
-                            wish to pass on their knowledge and support to help
-                            you overcome any challenges with menstruation.
-                        </p>
+                    <h2>{thirdTitle}</h2>
+                    <p>{thirdDescription}</p>
                     </div>
                 </div>
             </div>

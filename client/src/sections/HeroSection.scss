@@ -1,1 +1,38 @@
 @import "../App.scss";
+
+.hero {
+
+  &__logo {
+    margin-top: 70px;
+  }
+
+  &__hero-title {
+    text-align: center;
+    font-size: 80px;
+    font-weight: 400;
+    line-height: normal;
+    margin-top: 0px;
+    margin-bottom: 13px;
+
+    span {
+      font-weight: 600;
+    }
+
+    &__p {
+      margin-top: 0px;
+      color: #000;
+      text-align: center;
+      font-size: 23px;
+      font-style: normal;
+      line-height: normal;
+    }
+  }
+
+  &__btns {
+    display: flex;
+    justify-content: center;
+    gap: 0.5rem;
+    margin-bottom: 20px;
+  }
+}
+

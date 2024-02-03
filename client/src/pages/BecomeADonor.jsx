@@ -2,6 +2,8 @@ import React, {useEffect, useState} from "react"
 import {GoogleMap, LoadScript, MarkerF} from "@react-google-maps/api";
 import "./BecomeADonor.scss";
 import qrcode from "../../public/images/QR Code.png";
+import HowItWorks from "../sections/HowItWorks";
+import { donationTypesData } from "../constants/appConstants";
 
 const containerStyle = {
     width: "800px",
@@ -14,7 +16,7 @@ const chicago = {
 };
 
 const sanFran = {
-    lat: 37.800,
+    lat: 37.8,
     lng: -122.438,
 };
 
@@ -27,7 +29,6 @@ const seattle = {
     lat: 47.614,
     lng: -122.328,
 };
-
 
 function BecomeADonor() {
     const [selectedLocation, setSelectedLocation] = useState(chicago);

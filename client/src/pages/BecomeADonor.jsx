@@ -123,6 +123,15 @@ function BecomeADonor() {
                     <button className="btn btn-secondary">Go To Donation Page</button>
                 </a>
             </div>
+            {/*3.  PowerPadGirl Member Request*/}
+            <div className="setion-title">
+                <h1 className="section-title__h1">
+                    3. <span> PowerPadGirl Member Request</span> Link
+                </h1>
+                <p>
+                Take an active role in our mission by becoming a Power Pad Girl. In this role, you will receive donated pads and then distribute them to those in need based on incoming requests. This is a hands-on way to contribute and make a direct impact on individuals' lives.
+                </p>
+            </div>
             <div className="power-pad-girl-form">
                 <form onSubmit={handleSubmit}>
                 <h2>Member Request Form</h2>

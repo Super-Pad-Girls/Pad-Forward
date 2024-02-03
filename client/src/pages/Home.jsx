@@ -4,6 +4,7 @@ import GetInvolved from "../sections/GetInvolved";
 import HeroSection from "../sections/HeroSection";
 import HowItWorks from "../sections/HowItWorks";
 import "./Home.scss";
+import React from "react";
 
 const homeData = {
     firstTitle: "1. Send Unused Pads:",
@@ -27,8 +28,21 @@ const Home = () => {
     return (
         <div className="home">
             <HeroSection />
+            <div className="setion-title">
+                <h1 className="section-title__h1">About<span> PadForward</span></h1>
+            </div>
             <AboutUs data={homeAboutData} />
+
+            <div className="setion-title">
+                <h1 className="section-title__h1"><span>How</span> It Works</h1>
+                <p>"Simple Steps to Make a Big Impact"</p>
+            </div>
             <HowItWorks content={stepsData} />
+
+            <div className="setion-title">
+                <h1 className="section-title__h1">Three Ways to Get Involved in <span>PadForward</span></h1>
+                <p>"Ready To Make Difference?"</p>
+            </div>
             <GetInvolved data={homeData} />
         </div>
     );

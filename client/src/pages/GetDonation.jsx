@@ -1,8 +1,4 @@
 import "./GetDonationBasic.scss";
-import privacyImage from '../../public/images/privacy.png';
-import deliveryImage from '../../public/images/delivery.png';
-import supportImage from '../../public/images/support.png';
-
 
 const GetDonation = () => {
     const handleSubmit = (e) => {
@@ -16,48 +12,22 @@ const GetDonation = () => {
                 </div>
                 <div className="donation-introduction">
                     <h3> "Everyone Is Eligible"</h3>
-                    <p>Our program operates on the principle that menstrual health is a right, not a privilege.
-                        Therefore, everyone in need of menstrual hygiene products is welcome to apply for support. We
-                        aim to ensure that no one is left without access to essential menstrual care.</p>
-                </div>
-                {/* <SummaryBoard /> */}
-                <div className="summary-board">
-                    <div className="content-row">
-                        <div className="image" style={{backgroundImage: `url(${privacyImage})`}}></div>
-                        <div className="text">
-                            <h2>1. Privacy and Anonymity Guaranteed</h2>
-                            <p>We understand the importance of privacy and confidentiality. When you apply for support,
-                                your anonymity is fully guaranteed. Please feel comfortable reaching out for help
-                                without the worry of your personal information being disclosed. Your trust and comfort
-                                are paramount to us.</p>
-                        </div>
-                    </div>
-                    <div className="content-row reverse">
-                        <div className="text">
-                            <h2>2. Delivery to Your Provided Address</h2>
-                            <p>Once your request is approved, we will ship the menstrual pads directly to the address
-                                you have provided. Our goal is to ensure that you receive the support you need promptly
-                                and efficiently.</p>
-                        </div>
-                        <div className="image" style={{backgroundImage: `url(${deliveryImage})`}}></div>
-                    </div>
-                    <div className="content-row">
-                        <div className="image" style={{backgroundImage: `url(${supportImage})`}}></div>
-                        <div className="text">
-                            <h2>3. Tips and Support Alongside Your Pads</h2>
-                            <p>With every package of menstrual pads, we also send tips and advice on managing your
-                                period, all shared with love and care. These tips come from donors who have navigated
-                                their own menstrual experiences and wish to pass on their knowledge and support to help
-                                you overcome any challenges with menstruation.</p>
-                        </div>
-                    </div>
+                    <p>
+                        Our program operates on the principle that menstrual
+                        health is a right, not a privilege. Therefore, everyone
+                        in need of menstrual hygiene products is welcome to
+                        apply for support. We aim to ensure that no one is left
+                        without access to essential menstrual care.
+                    </p>
                 </div>
 
                 <div className="donation-card">
                     <h3>GetDonation</h3>
                     <form onSubmit={handleSubmit}>
                         <div className="col-md-6">
-                            <label htmlFor="recipientNamee">recipientName</label>
+                            <label htmlFor="recipientNamee">
+                                recipientName
+                            </label>
                             <input
                                 id="recipientName"
                                 type="text"
@@ -104,10 +74,12 @@ const GetDonation = () => {
                                 required
                             />
                         </div>
-                        <button className="btn btn-primary" type="submit">Submit</button>
+                        <button className="btn btn-primary" type="submit">
+                            Submit
+                        </button>
                     </form>
                 </div>
-                </div>
+            </div>
         </>
     );
 };

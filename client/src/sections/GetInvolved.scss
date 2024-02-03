@@ -1,0 +1,52 @@
+@import "../App.scss";
+
+.summary-board {
+    .content-row {
+        display: flex;
+        flex-direction: row;
+        margin-bottom: 20px;
+
+        &:nth-child(odd) {
+            .image {
+                order: 1;
+            }
+
+            .text {
+                order: 2;
+            }
+        }
+
+        &:nth-child(even) {
+            .image {
+                order: 2;
+            }
+
+            .text {
+                order: 1;
+            }
+        }
+
+        .image {
+            flex-basis: 50%;
+            background-size: cover;
+            background-position: center;
+            min-height: 200px;
+        }
+
+        .text {
+            flex-basis: 50%;
+            padding: 20px;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+
+            h2 {
+                margin-bottom: 10px;
+            }
+
+            p {
+                line-height: 1.6;
+            }
+        }
+    }
+}

@@ -13,9 +13,8 @@ $fs-large: 20px;
 $fs-xlarge: 32px;
 
 :root {
-    max-width: 1280px;
-    margin: 0 auto;
-    padding: 2rem;
+    // max-width: 1280px;
+    // margin: 0 auto;
     text-align: center;
     font-family: Rubik, Inter, system-ui, Avenir, Helvetica, Arial, sans-serif;
     line-height: 130%;
@@ -23,6 +22,12 @@ $fs-xlarge: 32px;
     font-size: $fs-medium;
     background-color: $color-ivory;
     color: $color-black;
+}
+
+body {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
 }
 
 a {
@@ -35,10 +40,9 @@ a {
     }
 }
 
-body {
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
+main {
+    max-width: 1280px;
+    margin: 0 auto;
 }
 
 .btn {

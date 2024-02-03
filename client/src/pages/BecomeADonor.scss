@@ -1,1 +1,12 @@
 @import "../App.scss";
+
+.state-buttons {
+  button {
+    margin: 1rem;
+  }
+}
+
+.map-box {
+  display: flex;
+  justify-content: center;
+}

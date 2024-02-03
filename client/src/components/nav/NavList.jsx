@@ -1,18 +1,24 @@
 import "./NavList.scss";
 
-const NavList = () => {
+const NavList = ({ location = "header" }) => {
+    let textClass;
+    if (location === "footer") {
+        textClass = "nav__list white-text";
+    } else {
+        textClass = "nav__list";
+    }
     return (
-        <nav className="nav">
-            <a href="#about" className="nav__list">
+        <nav className={`nav ${location === "header" && "sideMargins"}`}>
+            <a href="#about" className={textClass}>
                 About Us
             </a>
-            <a href="#howitworks" className="nav__list">
+            <a href="#howitworks" className={textClass}>
                 How It Works
             </a>
-            <a href="/" className="nav__list">
+            <a href="/" className={textClass}>
                 Blog
             </a>
-            <a href="/contact" className="nav__list">
+            <a href="/contact" className={textClass}>
                 Contact
             </a>
         </nav>

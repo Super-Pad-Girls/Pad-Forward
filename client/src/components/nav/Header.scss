@@ -1,12 +1,17 @@
 @import "../../App.scss";
 
 .header {
+    max-width: 1280px;
+    margin: 0 auto;
     position: sticky;
+    top: 0;
     display: flex;
     justify-content: space-between;
     align-items: center;
     padding: 0 20px;
-    background-color: $color-ivory;
+    background-color: rgba($color-ivory, 0.8);
+    backdrop-filter: blur(2px);
+    z-index: 10;
 
     &__company-name {
         font-size: $fs-xlarge;
@@ -20,5 +25,9 @@
     &__btns {
         display: flex;
         gap: 0.5rem;
+    }
+
+    .sideMargins {
+        margin: 0 150px 0 50px;
     }
 }

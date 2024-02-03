@@ -1,8 +1,30 @@
 import "./GetDonationBasic.scss";
+import axios from "axios";
+import { useState } from "react";
 
 const GetDonation = () => {
-    const handleSubmit = (e) => {
+
+    const [recipientName, setRecipientName] = useState("");
+    const [email, setEmail] = useState("");
+    const [address, setAddress] = useState("");
+    const [tampon, setTampon] = useState(0);
+    const [pad, setPad] = useState(0);
+
+    const handleSubmit = async (e) => {
         e.preventDefault();
+        try {
+          const { data } = await axios.post(`/api/recipients`, {
+            recipientName,
+            email,
+            address,
+            tampon,
+            pad,
+          })
+
+        } catch (err) {
+          console.log(err)
+
+        }
     };
     return (
         <>
@@ -22,11 +44,11 @@ const GetDonation = () => {
                 </div>
                 {/* <SummaryBoard /> */}
                 <div className="donation-card">
-                    <h3>GetDonation</h3>
+                    <h3>Get your choice of menstrual products!</h3>
                     <form onSubmit={handleSubmit}>
                         <div className="col-md-6">
                             <label htmlFor="recipientNamee">
-                                recipientName
+                                Your Name
                             </label>
                             <input
                                 id="recipientName"
@@ -58,9 +80,11 @@ const GetDonation = () => {
                             {/* <label htmlFor="tampon">Preferred Type</label> */}
                             <input
                                 id="tampon"
-                                type="tampon"
+                                type="number"
+                                min="0"
+                                max="50"
                                 name="tampon"
-                                placeholder="Enter Number of Tampon"
+                                placeholder="Enter the number of tampons you need (or 0 if none)"
                                 required
                             />
                         </div>
@@ -68,9 +92,11 @@ const GetDonation = () => {
                             {/* <label htmlFor="pad">Preferred Type</label> */}
                             <input
                                 id="pad"
-                                type="pad"
+                                type="number"
+                                min="0"
+                                max="50"
                                 name="pad"
-                                placeholder="Enter Number of Pad"
+                                placeholder="Enter the number of pads you need (or 0 if none)"
                                 required
                             />
                         </div>

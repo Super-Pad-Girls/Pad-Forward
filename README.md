@@ -10,7 +10,6 @@ Imagine a community where the end of your menstrual journey becomes the beginnin
 ## How It Works
 ![flowchart.png](flowchart.png)
 
-
 ## PadForward Preview
 ![LandingPage.png](LandingPage.png)
 [Figma Prototype](https://www.figma.com/proto/hsHL8aHqyX4ylm5rntEmIC/PadFoward?page-id=0%3A1&type=design&node-id=0-10&viewport=912%2C1434%2C1&t=4BlkhohKj0K97XdV-1&scaling=min-zoom&mode=design)
@@ -51,7 +50,7 @@ Imagine a community where the end of your menstrual journey becomes the beginnin
 
 |                      DanBi                       |                      Young                       |                      YoungHyun                       |                      May                       |
 | :----------------------------------------------: | :-----------------------------------------------: | :---------------------------------------------------: | :-----------------------------------------------: |
-|               **Full-Stack**                   |                 **Backend**                      |                    **Backend**                        |               **Full-Stack**                   |
+|               **Full-Stack**                   |                 **Full-Stack**                      |                    **Full-Stack**                        |               **Full-Stack**                   |
 | ![danbi1](https://github.com/YoungLeeHan/YoungleehanKorean/assets/86023470/8616e40e-0e5b-452b-90e2-e72d93dcdcc0) | ![young1](https://github.com/YoungLeeHan/YoungleehanKorean/assets/86023470/bacae85d-207e-49f1-9dd6-072cff02c52c) | ![younghyun1](https://github.com/YoungLeeHan/YoungleehanKorean/assets/86023470/c88b5510-6406-449c-b263-f701bb05848e) | ![may1](https://github.com/YoungLeeHan/YoungleehanKorean/assets/86023470/51f953a1-27f0-41ee-8978-1b2f25006acc) |
 |      [GitHub](https://github.com/sweetrain05)   |      [GitHub](https://github.com/YoungSong99)   |      [GitHub](https://github.com/younghyunlee22)   |      [GitHub](https://github.com/MayHyeyeonKim)   |
 | [![LinkedIn Badge](http://img.shields.io/badge/-LinkedIn-0072b1?style=flat&logo=linkedin&link=https://www.linkedin.com/in/danbi-choi/)](https://www.linkedin.com/in/danbi-choi/) | [![LinkedIn Badge](http://img.shields.io/badge/-LinkedIn-0072b1?style=flat&logo=linkedin&link=https://www.linkedin.com/in/youngsong01/)](https://www.linkedin.com/in/youngsong01/) | [![LinkedIn Badge](http://img.shields.io/badge/-LinkedIn-0072b1?style=flat&logo=linkedin&link=https://www.linkedin.com/in/younghyun-lee-yhl/)](https://www.linkedin.com/in/younghyun-lee-yhl/) | [![LinkedIn Badge](http://img.shields.io/badge/-LinkedIn-0072b1?style=flat&logo=linkedin&link=https://www.linkedin.com/in/hykim-may/)](https://www.linkedin.com/in/hykim-may/) |

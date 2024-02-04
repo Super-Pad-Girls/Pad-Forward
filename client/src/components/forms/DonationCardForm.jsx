@@ -23,8 +23,12 @@ const DonationCardForm = () => {
                     pad,
                 }
             );
-            clearData();
-            setIsSubmitted(true);
+            if (data.error) {
+                console.error("Error occured. Try again.");
+            } else {
+                clearData();
+                setIsSubmitted(true);
+            }
         } catch (err) {
             console.log("Recipient registration failed: ", err.response);
         }
@@ -87,30 +91,34 @@ const DonationCardForm = () => {
 
                     <h3>Your Choice of Menstrual Product(s)</h3>
                     <div className="col-md-6">
-                        {/* <label htmlFor="tampon">Preferred Type</label> */}
+                        <label htmlFor="tampon">
+                            How many packages of tampons do you need? (or 0 if
+                            none)
+                        </label>
                         <input
                             id="tampon"
                             type="number"
                             min="0"
                             max="50"
                             name="tampon"
-                            placeholder="Enter the number of tampons you need (or 0 if none)"
                             value={tampon}
-                            onChange={(e) => setTampon(e.target.value)}
+                            onChange={(e) => setTampon(Number(e.target.value))}
                             required
                         />
                     </div>
                     <div className="col-md-6">
-                        {/* <label htmlFor="pad">Preferred Type</label> */}
+                        <label htmlFor="pad">
+                            How many packages of pads do you need? (or 0 if
+                            none)
+                        </label>
                         <input
                             id="pad"
                             type="number"
                             min="0"
                             max="50"
                             name="pad"
-                            placeholder="Enter the number of pads you need (or 0 if none)"
                             value={pad}
-                            onChange={(e) => setPad(e.target.value)}
+                            onChange={(e) => setPad(Number(e.target.value))}
                             required
                         />
                     </div>

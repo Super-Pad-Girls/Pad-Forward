@@ -48,7 +48,7 @@ export const donationTypesData = [
     },
 ];
 
-export const homeData = {
+export const  homeData = {
     firstTitle: "1. Send Unused Pads:",
     firstDescription:
         "If you have menstrual pads that you no longer need, you can send them to the nearest PowerPadGirl address. Your unused pads can make a significant difference in someone's life by providing essential menstrual hygiene products to those in need.",

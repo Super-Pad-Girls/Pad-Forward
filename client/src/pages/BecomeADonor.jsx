@@ -79,30 +79,26 @@ function BecomeADonor() {
                     onClick={() => handleClickLocation(chicago)}
                     className="btn btn-primary"
                 >
-                    {" "}
                     Illinois
-                </button>{" "}
+                </button>
                 <button
                     onClick={() => handleClickLocation(michiganCity)}
                     className="btn btn-primary"
                 >
-                    {" "}
                     Indiana
-                </button>{" "}
+                </button>
                 <button
                     onClick={() => handleClickLocation(sanFran)}
                     className="btn btn-primary"
                 >
-                    {" "}
                     California
-                </button>{" "}
+                </button>
                 <button
                     onClick={() => handleClickLocation(seattle)}
                     className="btn btn-primary"
                 >
-                    {" "}
                     Washington
-                </button>{" "}
+                </button>
             </div>
             <div className="map-box">
                 <LoadScript
@@ -164,10 +160,7 @@ function BecomeADonor() {
                     </>
                 }
             >
-                <BsFill2CircleFill /> <span>
-                    {" "}
-                    PowerPadGirl Member Request
-                </span>{" "}
+                <BsFill3CircleFill /> <span>PowerPadGirl Member Request</span>
                 Link
             </SectionTitle>
 

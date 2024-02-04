@@ -8,13 +8,17 @@
 
   &__hero-title {
     text-align: center;
-    font-size: 80px;
+    font-size: 70px;
     font-weight: 400;
     line-height: normal;
     margin-top: 0px;
     margin-bottom: 13px;
 
-    span {
+    &__small {
+      font-size: 50px;
+    }
+
+    &__highlight {
       font-weight: 600;
     }
 

@@ -1,4 +1,4 @@
-import "./Donorform.scss";
+import "./DonorForm.scss";
 
 const DonorForm = () => {
     const handleSubmit = (e) => {

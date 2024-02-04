@@ -14,7 +14,7 @@ const DonationCardForm = () => {
         e.preventDefault();
         try {
             const { data } = await axios.post(
-                "http://localhost:8000/api/recipients",
+                `${import.meta.env.VITE_REACT_APP_API}/api/recipients`,
                 {
                     recipientName,
                     email,

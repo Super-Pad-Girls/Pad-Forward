@@ -10,8 +10,13 @@
         font-size: 80px;
         font-weight: 400;
         line-height: normal;
-      
-        span {
+
+        &__small {
+            font-weight: 300;
+            font-size: 50px;
+        }
+
+        &__highlight {
             font-weight: 600;
         }
 
@@ -22,7 +27,6 @@
             font-size: 20px;
             margin-bottom: 5rem;
         }
-
     }
 
     &__btns {

@@ -160,7 +160,9 @@ function BecomeADonor() {
                     </>
                 }
             >
-                <BsFill3CircleFill /> <span>PowerPadGirl Member Request</span>
+                <BsFill3CircleFill /> <span>
+                    PowerPadGirl Member Request
+                </span>{" "}
                 Link
             </SectionTitle>
 

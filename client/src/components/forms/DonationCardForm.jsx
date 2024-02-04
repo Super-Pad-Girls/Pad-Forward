@@ -64,7 +64,6 @@ const DonationCardForm = () => {
                             value={recipientName}
                             onChange={(e) => setRecipientName(e.target.value)}
                             required
-                            autoFocus
                         />
                     </div>
                     <div className="col-md-6">

@@ -1,7 +1,7 @@
-import box from "../../public/images/mall-bag.png";
-import hand from "../../public/images/hold.png";
-import heart from "../../public/images/heart-ballon.png";
-import money from "../../public/images/paper-money-two.png";
+import box from "/images/mall-bag.png";
+import hand from "/images/hold.png";
+import heart from "/images/heart-ballon.png";
+import money from "/images/paper-money-two.png";
 
 export const stepsData = [
     {
@@ -61,7 +61,25 @@ export const  homeData = {
 };
 
 export const homeAboutData = {
-    title: "PadForward: Together, We Can End Menstrual Inequity",
+    title: '"PadForward: Together, We Can End Menstrual Inequity"',
     description:
         "At PadForward, we believe every woman deserves access to menstrual hygiene products. Our initiative connects post-menopausal women with excess menstrual supplies to those in need, ensuring dignity and health for all.",
+};
+
+export const getDonationData = {
+    firstTitle: "1. Privacy and Anonymity Guaranteed",
+    firstDescription:
+        "We understand the importance of privacy and confidentiality. When you apply for support, your anonymity is fully guaranteed. Please feel comfortable reaching out for help without the worry of your personal information being disclosed. Your trust and comfort are paramount to us.",
+    secondTitle: "2. Delivery to Your Provided Address",
+    secondDescription:
+        "Once your request is approved, we will ship the menstrual pads directly to the address you have provided. Our goal is to ensure that you receive the support you need promptly and efficiently",
+    thirdTitle: "3. Tips and Support Alongside Your Pads",
+    thirdDescription:
+        "Our program operates on the principle that menstrual health is a right, not a privilege. Therefore, everyone in need of menstrual hygiene products is welcome to apply for support. We aim to ensure that no one is left without access to essential menstrual care.",
+};
+
+export const getDonationAboutData = {
+    title: "Everyone Is Eligible",
+    description:
+        "Our program operates on the principle that menstrual health is a right, not a privilege. Therefore, everyone in need of menstrual hygiene products is welcome to apply for support. We aim to ensure that no one is left without access to essential menstrual care.",
 };

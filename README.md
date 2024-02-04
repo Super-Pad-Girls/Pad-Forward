@@ -1,4 +1,4 @@
-# PadForward, Pay It Forward
+# PadForward with Pay It Forward
 
 ## About PadForward
 **"PadForward: Together, We Can End Menstrual Inequity"**
@@ -7,20 +7,29 @@ Have you ever found yourself with a stash of menstrual products that suddenly se
 
 Imagine a community where the end of your menstrual journey becomes the beginning of support for another. Every pad you've saved, every tip you've learned, carries the potential to ease someone else's challenges. PadForward isn't just about donating menstrual products; it's about passing on a legacy of care, strength, and shared experiences.
 
+## Why We Started PadForward
+
+In response to the alarming statistics revealing that 64% of respondents in the United States have reported difficulty affording menstrual products, with 21% unable to afford these products every month, it's noteworthy that many individuals who have reached menopause end up discarding their unused menstrual supplies.
+
+![Impact.png](Impact.png)
+
+Read more about [Why](https://desj.sccgov.org/data-and-resources/menstrual-equity#:~:text=In%20the%20United%20States%2C%20studies,afford%20these%20products%20every%20month)
+
+
 ## How It Works
 ![flowchart.png](flowchart.png)
 
 ## PadForward Preview
-![LandingPage.png](LandingPage.png)
+![Landing.png](Landing.png)
 [Figma Prototype](https://www.figma.com/proto/hsHL8aHqyX4ylm5rntEmIC/PadFoward?page-id=0%3A1&type=design&node-id=0-10&viewport=912%2C1434%2C1&t=4BlkhohKj0K97XdV-1&scaling=min-zoom&mode=design)
 
 ##  Languages and Tools
 
--   🎨 UI Design
+-   UI Design
 
     ![Figma](https://img.shields.io/badge/figma-%23F24E1E.svg?style=for-the-badge&logo=figma&logoColor=white)
 
--   🔮 FE
+-    FE
 
     ![React](https://img.shields.io/badge/React-%2361DAFB.svg?style=for-the-badge&logo=react&logoColor=black)
     ![JavaScript](https://img.shields.io/badge/JavaScript-%23F7DF1E.svg?style=for-the-badge&logo=javascript&logoColor=black)
@@ -30,7 +39,7 @@ Imagine a community where the end of your menstrual journey becomes the beginnin
     ![Bootstrap](https://img.shields.io/badge/bootstrap-%238511FA.svg?style=for-the-badge&logo=bootstrap&logoColor=white)
 
 
--   💻 BE
+-   BE
 
     ![NodeJS](https://img.shields.io/badge/node.js-6DA55F?style=for-the-badge&logo=node.js&logoColor=white)
     ![MongoDB](https://img.shields.io/badge/MongoDB-%2347A248.svg?style=for-the-badge&logo=mongodb&logoColor=black)
@@ -38,7 +47,7 @@ Imagine a community where the end of your menstrual journey becomes the beginnin
     ![Nodemon](https://img.shields.io/badge/NODEMON-%23323330.svg?style=for-the-badge&logo=nodemon&logoColor=%BBDEAD)
     ![Postman](https://img.shields.io/badge/Postman-FF6C37?style=for-the-badge&logo=postman&logoColor=white)
 
--   📋 etc
+-   etc
 
     ![GitHub](https://img.shields.io/badge/github-%23121011.svg?style=for-the-badge&logo=github&logoColor=white)
     ![Git](https://img.shields.io/badge/Git-%23F05032.svg?style=for-the-badge&logo=git&logoColor=white)

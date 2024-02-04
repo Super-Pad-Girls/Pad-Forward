@@ -1,10 +1,17 @@
-import privacyImage from "../../public/images/privacy.png";
-import deliveryImage from "../../public/images/delivery.png";
-import supportImage from "../../public/images/support.png";
+import privacyImage from "/images/privacy.png";
+import deliveryImage from "/images/delivery.png";
+import supportImage from "/images/support.png";
 import "./GetInvolved.scss";
 
 const GetInvolved = ({ data }) => {
-    const { firstTitle, firstDescription, secondTitle, secondDescription, thirdTitle, thirdDescription } = data;
+    const {
+        firstTitle,
+        firstDescription,
+        secondTitle,
+        secondDescription,
+        thirdTitle,
+        thirdDescription,
+    } = data;
     return (
         <>
             <div className="summary-board">
@@ -20,8 +27,8 @@ const GetInvolved = ({ data }) => {
                 </div>
                 <div className="content-row reverse">
                     <div className="text">
-                    <h2>{secondTitle}</h2>
-                    <p>{secondDescription}</p>
+                        <h2>{secondTitle}</h2>
+                        <p>{secondDescription}</p>
                     </div>
                     <div
                         className="image"
@@ -34,8 +41,8 @@ const GetInvolved = ({ data }) => {
                         style={{ backgroundImage: `url(${supportImage})` }}
                     ></div>
                     <div className="text">
-                    <h2>{thirdTitle}</h2>
-                    <p>{thirdDescription}</p>
+                        <h2>{thirdTitle}</h2>
+                        <p>{thirdDescription}</p>
                     </div>
                 </div>
             </div>

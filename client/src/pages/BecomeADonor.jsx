@@ -134,7 +134,7 @@ function BecomeADonor() {
             </div>
             <div className="power-pad-girl-form">
                 <form onSubmit={handleSubmit}>
-                <h2>Member Request Form</h2>
+                <h3>Member Request Form</h3>
                     <div className="col-md-6">
                         <label htmlFor="powerPadGirlName">Power Pad Girl Name</label>
                         <input

@@ -86,7 +86,7 @@ const GetDonation = () => {
                             placeholder="Enter Preferred Delivery Address"
                         />
 
-                        <p>Your Choice of Menstrual Product(s)</p>
+                        <h3>Your Choice of Menstrual Product(s)</h3>
                         <div className="col-md-6">
                             {/* <label htmlFor="tampon">Preferred Type</label> */}
                             <input

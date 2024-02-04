@@ -1,12 +1,13 @@
-import { useState } from "react";
 import GetInvolved from "../sections/GetInvolved";
 import AboutUs from "../sections/AboutUs";
 import { homeAboutData, homeData } from "../constants/appConstants";
 import SectionTitle from "../components/cards/SectionTitle";
 import DonationCardForm from "../components/forms/DonationCardForm";
+import useScrollToTop from "../hooks/useScrollToTop";
 import "./GetDonation.scss";
 
 const GetDonation = () => {
+    useScrollToTop();
     return (
         <>
             <div className="donation-basic">

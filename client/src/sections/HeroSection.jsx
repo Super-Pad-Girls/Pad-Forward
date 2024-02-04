@@ -27,8 +27,9 @@ const HeroSection = () => {
                 </div>
 
                 <h1 className="hero__hero-title">
-                    Pay It Forward,{" "}
-                    <span className="highlight">PadForward</span>
+                    Pay It Forward{" "}
+                    <span className="hero__hero-title__small">with</span>{" "}
+                    <span className="hero__hero-title__highlight">PadForward</span>
                 </h1>
 
                 <p className="hero__hero-title__p">

@@ -84,7 +84,6 @@ const GetDonation = () => {
                                 value={email}
                                 onChange={(e) => setEmail(e.target.value)}
                                 required
-                                autoFocus
                             />
                         </div>
                         <label htmlFor="address">Address</label>
@@ -97,7 +96,6 @@ const GetDonation = () => {
                             onChange={(e) => setAddress(e.target.value)}
                             autoFocus
                         />
-
                         <h3>Your Choice of Menstrual Product(s)</h3>
                         <div className="col-md-6">
                             {/* <label htmlFor="tampon">Preferred Type</label> */}
@@ -111,7 +109,6 @@ const GetDonation = () => {
                                 value={tampon}
                                 onChange={(e) => setTampon(e.target.value)}
                                 required
-                                autoFocus
                             />
                         </div>
                         <div className="col-md-6">
@@ -126,7 +123,6 @@ const GetDonation = () => {
                                 value={pad}
                                 onChange={(e) => setPad(e.target.value)}
                                 required
-                                autoFocus
                             />
                         </div>
                         <button className="btn btn-primary" type="submit">

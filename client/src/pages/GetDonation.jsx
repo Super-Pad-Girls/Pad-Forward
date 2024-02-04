@@ -1,11 +1,13 @@
 import "./GetDonationBasic.scss";
 import axios from "axios";
 import { useState } from "react";
+import { useNavigate } from "react-router-dom";
 import GetInvolved from "../sections/GetInvolved";
 import AboutUs from "../sections/AboutUs";
 import "./GetDonationBasic.scss";
 
 const GetDonation = () => {
+    const navigate = useNavigate()
     const [recipientName, setRecipientName] = useState("");
     const [email, setEmail] = useState("");
     const [address, setAddress] = useState("");
@@ -15,17 +17,20 @@ const GetDonation = () => {
     const handleSubmit = async (e) => {
         e.preventDefault();
         try {
-            const { data } = await axios.post(`/api/recipients`, {
-                recipientName,
-                email,
-                address,
-                tampon,
-                pad,
-            });
+          const { data } = await axios.post("http://localhost:8000/api/recipients", {
+            recipientName,
+            email,
+            address,
+            tampon,
+            pad,
+          })
+          navigate("/")
         } catch (err) {
-            console.log(err);
+          console.log('Recipient registration failed: ', err.response);
         }
     };
+
+
     const homeData = {
         firstTitle: "1. Privacy and Anonymity Guaranteed",
         firstDescription:
@@ -63,7 +68,10 @@ const GetDonation = () => {
                                 type="text"
                                 name="recipientName"
                                 placeholder="Enter Name"
+                                value={recipientName}
+                                onChange={(e) => setRecipientName(e.target.value)}
                                 required
+                                autoFocus
                             />
                         </div>
                         <div className="col-md-6">
@@ -73,7 +81,10 @@ const GetDonation = () => {
                                 type="email"
                                 name="email"
                                 placeholder="Enter Email Address"
+                                value={email}
+                                onChange={(e) => setEmail(e.target.value)}
                                 required
+                                autoFocus
                             />
                         </div>
                         <label htmlFor="address">Address</label>
@@ -82,6 +93,9 @@ const GetDonation = () => {
                             type="text"
                             name="address"
                             placeholder="Enter Preferred Delivery Address"
+                            value={address}
+                            onChange={(e) => setAddress(e.target.value)}
+                            autoFocus
                         />
 
                         <h3>Your Choice of Menstrual Product(s)</h3>
@@ -94,7 +108,10 @@ const GetDonation = () => {
                                 max="50"
                                 name="tampon"
                                 placeholder="Enter the number of tampons you need (or 0 if none)"
+                                value={tampon}
+                                onChange={(e) => setTampon(e.target.value)}
                                 required
+                                autoFocus
                             />
                         </div>
                         <div className="col-md-6">
@@ -106,7 +123,10 @@ const GetDonation = () => {
                                 max="50"
                                 name="pad"
                                 placeholder="Enter the number of pads you need (or 0 if none)"
+                                value={pad}
+                                onChange={(e) => setPad(e.target.value)}
                                 required
+                                autoFocus
                             />
                         </div>
                         <button className="btn btn-primary" type="submit">

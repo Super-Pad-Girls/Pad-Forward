@@ -11,7 +11,7 @@ export const recipientCreate = async (req, res) => {
       pad,
     });
     await recipient.save();
-    res.json(recipient);
+    res.redirect("http://localhost:5173");
   } catch (err) {
     console.log(err);
     return res.status(400).json({ success: false, error: err.message });

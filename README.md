@@ -1,6 +1,6 @@
 # PadForward with Pay It Forward
 
-## About PadForward
+## Inspiration
 **"PadForward: Together, We Can End Menstrual Inequity"**
 
 Have you ever found yourself with a stash of menstrual products that suddenly seem unnecessary as your periods come to an end? Instead of discarding them, imagine turning those surplus supplies into a beacon of support for someone in need. This is where PadForward comes into play, inviting you to not just share the menstrual products but also the wisdom and warmth that got you through your own cycles.
@@ -16,14 +16,14 @@ In response to the alarming statistics revealing that 64% of respondents in the 
 Read more about [Why](https://desj.sccgov.org/data-and-resources/menstrual-equity#:~:text=In%20the%20United%20States%2C%20studies,afford%20these%20products%20every%20month)
 
 
-## How It Works
+## What it does
 ![flowchart.png](flowchart.png)
 
 ## PadForward Preview
 ![Landing.png](Landing.png)
 [Figma Prototype](https://www.figma.com/proto/hsHL8aHqyX4ylm5rntEmIC/PadFoward?page-id=0%3A1&type=design&node-id=0-10&viewport=912%2C1434%2C1&t=4BlkhohKj0K97XdV-1&scaling=min-zoom&mode=design)
 
-##  Languages and Tools
+##  How we built it
 
 -   UI Design
 
@@ -54,6 +54,15 @@ Read more about [Why](https://desj.sccgov.org/data-and-resources/menstrual-equit
    ![NPM](https://img.shields.io/badge/NPM-%23CB3837.svg?style=for-the-badge&logo=npm&logoColor=white)
 
 <!-- <hr/> -->
+## Challenges we ran into
+One of the main challenges was our decision to use Vite for the first time, pushing us to learn a new tool under time constraints. Integrating the Google Maps API presented another hurdle, as we navigated through its documentation to understand error handling. The 24-hour coding marathon tested our abilities to communicate and collaborate effectively under pressure.
+
+## Accomplishments that we're proud of
+We are proud of bringing our idea to life, creating a functional platform that addresses a critical social issue. Successfully using new technologies like Vite and integrating external APIs such as Google Maps are significant technical achievements. Most importantly, fostering a sense of community and support through PadForward fills us with pride.
+
+## What we learned
+Through this project, we learned the importance of teamwork and effective communication, especially when working under tight deadlines. The technical skills gained from using a new development environment and APIs have been invaluable. Additionally, we deepened our understanding of menstrual equity and the impact of community support on addressing social issues.
+
 
 ## Developers
 

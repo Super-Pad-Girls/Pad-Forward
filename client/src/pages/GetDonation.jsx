@@ -2,11 +2,10 @@ import "./GetDonationBasic.scss";
 import axios from "axios";
 import { useState } from "react";
 import GetInvolved from "../sections/GetInvolved";
-import AboutUs from "../sections/AboutUs"
-import React from "react";
+import AboutUs from "../sections/AboutUs";
+import "./GetDonationBasic.scss";
 
 const GetDonation = () => {
-
     const [recipientName, setRecipientName] = useState("");
     const [email, setEmail] = useState("");
     const [address, setAddress] = useState("");
@@ -16,17 +15,15 @@ const GetDonation = () => {
     const handleSubmit = async (e) => {
         e.preventDefault();
         try {
-          const { data } = await axios.post(`/api/recipients`, {
-            recipientName,
-            email,
-            address,
-            tampon,
-            pad,
-          })
-
+            const { data } = await axios.post(`/api/recipients`, {
+                recipientName,
+                email,
+                address,
+                tampon,
+                pad,
+            });
         } catch (err) {
-          console.log(err)
-
+            console.log(err);
         }
     };
     const homeData = {
@@ -34,14 +31,17 @@ const GetDonation = () => {
         firstDescription:
             "We understand the importance of privacy and confidentiality. When you apply for support, your anonymity is fully guaranteed. Please feel comfortable reaching out for help without the worry of your personal information being disclosed. Your trust and comfort are paramount to us.",
         secondTitle: "2. Delivery to Your Provided Address",
-        secondDescription: "Once your request is approved, we will ship the menstrual pads directly to the address you have provided. Our goal is to ensure that you receive the support you need promptly and efficiently",
+        secondDescription:
+            "Once your request is approved, we will ship the menstrual pads directly to the address you have provided. Our goal is to ensure that you receive the support you need promptly and efficiently",
         thirdTitle: "3. Tips and Support Alongside Your Pads",
-        thirdDescription: "Our program operates on the principle that menstrual health is a right, not a privilege. Therefore, everyone in need of menstrual hygiene products is welcome to apply for support. We aim to ensure that no one is left without access to essential menstrual care."
+        thirdDescription:
+            "Our program operates on the principle that menstrual health is a right, not a privilege. Therefore, everyone in need of menstrual hygiene products is welcome to apply for support. We aim to ensure that no one is left without access to essential menstrual care.",
     };
 
     const homeAboutData = {
         title: "Everyone Is Eligible",
-        description: "Our program operates on the principle that menstrual health is a right, not a privilege. Therefore, everyone in need of menstrual hygiene products is welcome to apply for support. We aim to ensure that no one is left without access to essential menstrual care."
+        description:
+            "Our program operates on the principle that menstrual health is a right, not a privilege. Therefore, everyone in need of menstrual hygiene products is welcome to apply for support. We aim to ensure that no one is left without access to essential menstrual care.",
     };
     return (
         <>
@@ -51,15 +51,13 @@ const GetDonation = () => {
                         Receiving Support: <span>Who Can Apply?</span>
                     </h1>
                 </div>
-                <AboutUs data={homeAboutData}/>
+                <AboutUs data={homeAboutData} />
                 <GetInvolved data={homeData} />
                 <div className="donation-card">
                     <h3>Get your choice of menstrual products!</h3>
                     <form onSubmit={handleSubmit}>
                         <div className="col-md-6">
-                            <label htmlFor="recipientNamee">
-                                Your Name
-                            </label>
+                            <label htmlFor="recipientNamee">Your Name</label>
                             <input
                                 id="recipientName"
                                 type="text"

@@ -1,7 +1,7 @@
-import "./Header.scss";
 import { Link, useNavigate } from "react-router-dom";
 import { BsBox2HeartFill } from "react-icons/bs";
 import NavList from "./NavList";
+import "./Header.scss";
 
 const Header = () => {
     const navigate = useNavigate();

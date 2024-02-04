@@ -9,10 +9,10 @@ const NavList = ({ location = "header" }) => {
     }
     return (
         <nav className={`nav ${location === "header" && "sideMargins"}`}>
-            <a href="#about" className={textClass}>
+            <a href="/#about" className={textClass}>
                 About Us
             </a>
-            <a href="#howitworks" className={textClass}>
+            <a href="/#howitworks" className={textClass}>
                 How It Works
             </a>
             <a href="/" className={textClass}>

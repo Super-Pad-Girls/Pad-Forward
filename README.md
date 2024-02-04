@@ -11,7 +11,7 @@ Imagine a community where the end of your menstrual journey becomes the beginnin
 
 In response to the alarming statistics revealing that 64% of respondents in the United States have reported difficulty affording menstrual products, with 21% unable to afford these products every month, it's noteworthy that many individuals who have reached menopause end up discarding their unused menstrual supplies.
 
-![Impact.png](Impact.png)
+[//]: # (![Impact.png]&#40;Impact.png&#41;)
 
 Read more about [Why](https://desj.sccgov.org/data-and-resources/menstrual-equity#:~:text=In%20the%20United%20States%2C%20studies,afford%20these%20products%20every%20month)
 
@@ -19,9 +19,11 @@ Read more about [Why](https://desj.sccgov.org/data-and-resources/menstrual-equit
 ## What it does
 ![flowchart.png](flowchart.png)
 
-## PadForward Preview
-![Landing.png](Landing.png)
-[Figma Prototype](https://www.figma.com/proto/hsHL8aHqyX4ylm5rntEmIC/PadFoward?page-id=0%3A1&type=design&node-id=0-10&viewport=912%2C1434%2C1&t=4BlkhohKj0K97XdV-1&scaling=min-zoom&mode=design)
+[//]: # (## PadForward Preview)
+
+[//]: # ()
+[//]: # ([//]: # &#40;![Landing.png]&#40;Landing.png&#41;&#41;)
+[//]: # ([Figma Prototype]&#40;https://www.figma.com/proto/hsHL8aHqyX4ylm5rntEmIC/PadFoward?page-id=0%3A1&type=design&node-id=0-10&viewport=912%2C1434%2C1&t=4BlkhohKj0K97XdV-1&scaling=min-zoom&mode=design&#41;)
 
 ##  How we built it
 

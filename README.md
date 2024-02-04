@@ -69,14 +69,10 @@ Through this project, we learned the importance of teamwork and effective commun
 ![Git](https://img.shields.io/badge/Git-%23F05032.svg?style=for-the-badge&logo=git&logoColor=white)
 ![NPM](https://img.shields.io/badge/NPM-%23CB3837.svg?style=for-the-badge&logo=npm&logoColor=white)
 
-latform that allows individuals to donate unopened menstrual products to those in need. It serves as a bridge between people with surplus menstrual supplies and those who struggle to afford them. Beyond physical donations, the platform aims to be a space where older generations can share their knowledge and experiences with younger ones, fostering a community of support and understanding.
-[//]: # (![flowchart.png]&#40;flowchart.png&#41;)
 
-[//]: # (## PadForward Preview)
 
-[//]: # ()
-[//]: # ([//]: # &#40;![Landing.png]&#40;Landing.png&#41;&#41;)
-[//]: # ([Figma Prototype]&#40;https://www.figma.com/proto/hsHL8aHqyX4ylm5rntEmIC/PadFoward?page-id=0%3A1&type=design&node-id=0-10&viewport=912%2C1434%2C1&t=4BlkhohKj0K97XdV-1&scaling=min-zoom&mode=design&#41;)
+## PadForward Preview
+[Figma Prototype](https://www.figma.com/proto/hsHL8aHqyX4ylm5rntEmIC/PadFoward?page-id=0%3A1&type=design&node-id=0-10&viewport=912%2C1434%2C1&t=4BlkhohKj0K97XdV-1&scaling=min-zoom&mode=design&#41;)
 
 <!-- <hr/> -->
 

@@ -1,6 +1,9 @@
+import useScrollToTop from "../hooks/useScrollToTop";
 import "./Contact.scss";
 
 const Contact = () => {
+    useScrollToTop();
+
     const handleSubmit = (e) => {
         e.preventDefault();
         console.log("contact form submitted!");

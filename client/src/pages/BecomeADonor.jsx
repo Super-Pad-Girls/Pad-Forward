@@ -1,9 +1,16 @@
 import { useEffect, useState } from "react";
+import {
+    BsFill1CircleFill,
+    BsFill2CircleFill,
+    BsFill3CircleFill,
+} from "react-icons/bs";
 import { GoogleMap, LoadScript, MarkerF } from "@react-google-maps/api";
-import qrcode from "../../public/images/QR Code.png";
+import qrcode from "/images/QR Code.png";
 import useScrollToTop from "../hooks/useScrollToTop";
 import HowItWorks from "../sections/HowItWorks";
 import { donationTypesData } from "../constants/appConstants";
+import SectionTitle from "../components/cards/SectionTitle";
+import DonorForm from "../components/forms/DonorForm";
 import "./BecomeADonor.scss";
 
 const containerStyle = {
@@ -41,34 +48,32 @@ function BecomeADonor() {
     };
 
     useEffect(() => {}, [selectedLocation]);
+    useEffect(() => {}, [selectedLocation]);
 
-    const handleSubmit = (e) => {
-        e.preventDefault();
-    };
     return (
         <>
             {/*1. Get Involved */}
-            <div className="setion-title">
-                <h1 className="section-title__h1">
-                    <span>Three Ways to Get Involved in</span> PadForward
-                </h1>
-                <p>"Simple Steps to Make a Big Impact"</p>
-            </div>
+            <SectionTitle subtitle={'"Simple Steps to Make a Big Impact"'}>
+                <span>Three Ways to Get Involved in</span> PadForward
+            </SectionTitle>
             <HowItWorks content={donationTypesData} />
 
             {/*2. Map */}
-            <div className="setion-title">
-                <h1 className="section-title__h1">
-                    1. Find <span>PowerPadGirl Location</span> To Send Pad
-                </h1>
-                <p>
-                    If you have menstrual pads that you no longer need, you can
-                    send them to the nearest PowerPadGirl address. <br /> Your
-                    unused pads can make a significant difference in someone's
-                    life by providing essential menstrual hygiene products to
-                    those in need.
-                </p>
-            </div>
+            <SectionTitle
+                subtitle={
+                    <>
+                        If you have menstrual pads that you no longer need, you
+                        can send them to the nearest PowerPadGirl address.{" "}
+                        <br /> Your unused pads can make a significant
+                        difference in someone's life by providing essential
+                        menstrual hygiene products to those in need.
+                    </>
+                }
+            >
+                <BsFill1CircleFill /> Find <span>PowerPadGirl Location</span> To
+                Send Pad
+            </SectionTitle>
+
             <div className="state-buttons">
                 <button
                     onClick={() => handleClickLocation(chicago)}
@@ -119,18 +124,22 @@ function BecomeADonor() {
             </div>
 
             {/*3. Donation*/}
-            <div className="setion-title">
-                <h1 className="section-title__h1">
-                    2. <span>Donation</span> Link
-                </h1>
-                <p>
-                    Your monetary donations are invaluable to us. The funds are
-                    primarily used to cover shipping costs for donated pads and
-                    to purchase additional pads when there's a shortfall. Every
-                    dollar you donate helps us ensure that everyone who needs
-                    menstrual hygiene products can get them.
-                </p>
-            </div>
+            <SectionTitle
+                subtitle={
+                    <>
+                        Your monetary donations are invaluable to us. The funds
+                        are primarily used to cover shipping costs for donated
+                        pads and to purchase additional pads when there's a
+                        shortfall.
+                        <br /> Every dollar you donate helps us ensure that
+                        everyone who needs menstrual hygiene products can get
+                        them.
+                    </>
+                }
+            >
+                <BsFill2CircleFill /> <span>Donation</span> Link
+            </SectionTitle>
+
             <div className="paypal">
                 <img className="paypal__img" src={qrcode} />
                 <a href="https://www.paypal.com/donate/?business=Z2WDNMBAT5M9N&no_recurring=0&item_name=Join+PadForward+in+our+mission+to+support+underserved+women+by+donating+menstrual+pads.+&currency_code=USD&source=qr">
@@ -141,60 +150,29 @@ function BecomeADonor() {
             </div>
 
             {/*4.  PowerPadGirl Member Request*/}
-            <div className="setion-title">
-                <h1 className="section-title__h1">
-                    3. <span> PowerPadGirl Member Request</span> Link
-                </h1>
-                <p>
-                    Take an active role in our mission by becoming a Power Pad
-                    Girl. In this role, you will receive donated pads and then
-                    distribute them to those in need based on incoming requests.
-                    This is a hands-on way to contribute and make a direct
-                    impact on individuals' lives.
-                </p>
-            </div>
-            <div className="power-pad-girl-form">
-                <form onSubmit={handleSubmit}>
-                    <h3>Member Request Form</h3>
-                    <div className="col-md-6">
-                        <label htmlFor="powerPadGirlName">
-                            Power Pad Girl Name
-                        </label>
-                        <input
-                            id="powerPadGirlName"
-                            type="text"
-                            name="powerPadGirlName"
-                            placeholder="Enter Name"
-                            required
-                        />
-                    </div>
-                    <div className="col-md-6">
-                        <label htmlFor="powerPadGirlemail">
-                            Power Pad Girl Email Address
-                        </label>
-                        <input
-                            id="powerPadGirlemail"
-                            type="email"
-                            name="powerPadGirlemail"
-                            placeholder="Enter Email Address"
-                            required
-                        />
-                    </div>
-                    <label htmlFor="powerPadGirladdress">
-                        Power Pad Girl Address
-                    </label>
-                    <input
-                        id="address"
-                        type="text"
-                        name="address"
-                        placeholder="Enter Preferred Delivery Address"
-                    />
+            <SectionTitle
+                subtitle={
+                    <>
+                        Take an active role in our mission by becoming a Power
+                        Pad Girl.
+                        <br /> In this role, you will receive donated pads and
+                        then distribute them to those in need based on incoming
+                        requests.
+                        <br />
+                        This is a hands-on way to contribute and make a direct
+                        impact on individuals' lives.
+                    </>
+                }
+            >
+                <BsFill2CircleFill /> <span>
+                    {" "}
+                    PowerPadGirl Member Request
+                </span>{" "}
+                Link
+            </SectionTitle>
 
-                    <button className="btn btn-primary" type="submit">
-                        Submit
-                    </button>
-                </form>
-            </div>
+            {/*5.  Donor form*/}
+            <DonorForm />
         </>
     );
 }

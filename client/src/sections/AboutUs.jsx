@@ -6,8 +6,8 @@ const AboutUs = ({ data }) => {
     return (
         <>
             <div className="donation-introduction">
-                <h3> {title}</h3>
-                <p>{description}</p>
+                <h3 className="donation-introduction__title">{title}</h3>
+                <p className="donation-introduction__p">{description}</p>
             </div>
         </>
     );

@@ -45,6 +45,14 @@ main {
     margin: 0 auto;
 }
 
+input {
+    font-size: $fs-medium;
+
+    &:focus {
+        outline: 2px solid $color-yellow;
+    }
+}
+
 .btn {
     padding: 0.6em 1.2em;
     font-size: $fs-medium;

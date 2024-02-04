@@ -1,6 +1,6 @@
-import { useNavigate } from "react-router-dom";
 import { BsBox2HeartFill } from "react-icons/bs";
-import logo from "../../public/images/hero.png";
+import { useNavigate } from "react-router-dom";
+import logo from "/images/hero.png";
 import "./HeroSection.scss";
 
 const HeroSection = () => {
@@ -25,16 +25,19 @@ const HeroSection = () => {
                 <div className="hero__logo">
                     <img src={logo} alt="PadForward Logo" />
                 </div>
+
                 <h1 className="hero__hero-title">
                     Pay It Forward,{" "}
                     <span className="highlight">PadForward</span>
                 </h1>
+
                 <p className="hero__hero-title__p">
                     Join PadForward in our mission to support underserved women
                     by donating menstrual pads.
                     <br />
                     Your contribution can make a significant difference.
                 </p>
+
                 <div className="hero__btns">
                     <button
                         className="btn btn-secondary-outline"

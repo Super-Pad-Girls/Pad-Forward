@@ -8,6 +8,7 @@ import useScrollToTop from "../hooks/useScrollToTop";
 import { homeData } from "../constants/appConstants";
 import { homeAboutData } from "../constants/appConstants";
 import { useLocation } from "react-router-dom";
+import SectionTitle from "../components/cards/SectionTitle";
 import "./Home.scss";
 
 const Home = () => {
@@ -36,27 +37,23 @@ const Home = () => {
     return (
         <div className="home">
             <HeroSection />
-            <div id="about" className="setion-title">
-                <h1 className="section-title__h1">
-                    About<span> PadForward</span>
-                </h1>
-            </div>
+
+            <SectionTitle id={"about"}>
+                About<span> PadForward</span>
+            </SectionTitle>
             <AboutUs data={homeAboutData} />
 
-            <div id="howitworks" className="setion-title">
-                <h1 className="section-title__h1">
-                    <span>How</span> It Works
-                </h1>
-                <p>"Simple Steps to Make a Big Impact"</p>
-            </div>
+            <SectionTitle
+                id={"howitworks"}
+                subtitle={'"Simple Steps to Make a Big Impact"'}
+            >
+                <span>How</span> It Works
+            </SectionTitle>
             <HowItWorks content={stepsData} />
 
-            <div className="setion-title">
-                <h1 className="section-title__h1">
-                    Three Ways to Get Involved in <span>PadForward</span>
-                </h1>
-                <p>"Ready To Make Difference?"</p>
-            </div>
+            <SectionTitle subtitle={'"Ready To Make Difference?"'}>
+                Three Ways to Get Involved in <span>PadForward</span>
+            </SectionTitle>
             <GetInvolved data={homeData} />
         </div>
     );

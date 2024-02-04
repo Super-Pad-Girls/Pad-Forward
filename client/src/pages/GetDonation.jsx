@@ -57,9 +57,19 @@ const GetDonation = () => {
                     </h1>
                 </div>
                 <AboutUs data={homeAboutData} />
+                <div className="setion-title">
+                    <h1 className="section-title__h1">
+                        What You Can <span>Expect</span>
+                    </h1>
+                </div>
                 <GetInvolved data={homeData} />
+                <div className="setion-title">
+                    <h1 className="section-title__h1">
+                        Overcome Period Irritation with <span>Love Around You</span>
+                    </h1>
+                </div>
                 <div className="donation-card">
-                    <h3>Get your choice of menstrual products!</h3>
+                    <h3>Request Your Choice of Menstrual Products</h3>
                     <form onSubmit={handleSubmit}>
                         <div className="col-md-6">
                             <label htmlFor="recipientNamee">Your Name</label>
@@ -94,7 +104,6 @@ const GetDonation = () => {
                             placeholder="Enter Preferred Delivery Address"
                             value={address}
                             onChange={(e) => setAddress(e.target.value)}
-                            autoFocus
                         />
                         <h3>Your Choice of Menstrual Product(s)</h3>
                         <div className="col-md-6">

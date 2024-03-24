@@ -6,5 +6,8 @@
             "src": "/(.*)",
             "dest": "/server.mjs"
         }
+    ],
+    "rewrites": [
+        { "source": "/(.*)", "destination": "/" }
     ]
 }

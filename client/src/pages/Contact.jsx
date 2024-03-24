@@ -6,7 +6,7 @@ const Contact = () => {
 
     const handleSubmit = (e) => {
         e.preventDefault();
-        console.log("contact form submitted!");
+        alert("contact form submitted!");
     };
 
     return (
